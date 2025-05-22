@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choisir une matière</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      font-size: 14px;
+    }
+
+    .header-title {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    .form-check-input {
+      width: 16px;
+      height: 16px;
+    }
+
+    .btn {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    a.btn {
+      text-decoration: none;
+      color: white;
+      background-color: #007bff;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header-title">📚 Choisissez une matière et contacter le superviseur pour accéder à l'épreuve</h1>
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="philosophie" />
+        <label class="form-check-label" for="philosophie">Philo</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="francais" />
+        <label class="form-check-label" for="francais">Français</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="anglais" />
+        <label class="form-check-label" for="anglais">Anglais</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="allemand" />
+        <label class="form-check-label" for="allemand">Allemand</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="espagnol" />
+        <label class="form-check-label" for="espagnol">Espagnol</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="histoire" />
+        <label class="form-check-label" for="histoire">Hist./Géo</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="mathematiques" />
+        <label class="form-check-label" for="mathematiques">Maths</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="physique" />
+        <label class="form-check-label" for="physique">Phys.-Chimie</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="svt" />
+        <label class="form-check-label" for="svt">Sc. Vie & Terre</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="informatique" />
+        <label class="form-check-label" for="informatique">Info</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="economie" />
+        <label class="form-check-label" for="economie">Éco</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="matiere" id="gestion" />
+        <label class="form-check-label" for="gestion">Gestion</label>
+        <a href="https://wa.me/message/7TS2ZXUIXTFBJ1" class="btn">Voir</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.querySelectorAll('input[name="matiere"]').forEach((radio) => {
+      radio.addEventListener('change', () => {
+        let url = radio.parentElement.querySelector('a').href;
+        window.location.href = url;
+      });
+    });
+  </script>
+</body>
+</html>
